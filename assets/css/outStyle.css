@@ -1,0 +1,482 @@
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+::-webkit-scrollbar:hover {
+    opacity: 1;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-noya-green-500-700);
+
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+
+}
+
+.scroll-trans::-webkit-scrollbar {
+    width: 1px;
+}
+
+.scroll-trans::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll-trans::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.scroll-trans::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+img, button, a {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number],input[type=search] {
+    -moz-appearance: textfield;
+}
+/*plus and minus start*/
+
+
+.minus, .plus{
+    border-radius:4px;
+    padding:8px 5px 8px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+/*brand slider index end*/
+
+.swiper-container {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+}
+.swiper-game {
+    width: 100%;
+    height: 100%;
+}
+.news-swiper .swiper-container {
+    max-width: unset;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    left: -16px!important;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    right: -16px!important;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: var(--color-noya-green-500);
+}
+.swiper-button-next:focus, .swiper-button-prev:focus{
+    outline: 0;
+}
+.swiper-slide {
+    text-align: center;
+    /*background: var(--color-overblack-mid);*/
+    color:#fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.index-swiper>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin:0 4px
+}
+.index-swiper>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left:50%;
+    transform:translateX(-50%);
+    white-space:nowrap
+}
+.index-swiper>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    transition:.2s transform,.2s left
+}
+.index-swiper>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    transition:.2s transform,.2s right
+}
+.index-swiper .swiper-pagination.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    bottom: -15px;
+}
+
+.index-swiper .swiper-pagination-bullet{
+    background:var(--color-noya-gray-100);
+}
+.swiper-pagination-bullet-active {
+    background:var(--color-noya-green-500)!important;
+    width: 20px;
+    margin: 0 3px;
+    border-radius: 30px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+.si{
+  color:forestgreen;
+}
+
+
+/*video.js*/
+video{
+    object-fit: fill!important;
+}
+video button:focus,.video-js button:focus{
+    outline: 0!important;
+}
+.my-video-dimensions{
+    width: 100%!important;
+    height: auto!important;
+}
+.video-js .vjs-tech{
+    position: relative!important;
+    height: unset!important;
+}
+/* Player Skin Designer for Video.js http://videojs.com To customize the player skin edit the CSS below. Click "details" below to add comments or questions. This file uses some SCSS. Learn more at http://sass-lang.com/guide) This designer can be linked to at: https://codepen.io/heff/pen/EarCt/left/?editors=010 */
+.video-js {
+    overflow: hidden;
+    border-radius: 10px;
+}
+/* Player Skin Designer for Video.js http://videojs.com To customize the player skin edit the CSS below. Click "details" below to add comments or questions. This file uses some SCSS. Learn more at http://sass-lang.com/guide) This designer can be linked to at: https://codepen.io/heff/pen/EarCt/left/?editors=010 */
+.video-js {
+    /* The base font size controls the size of everything, not just text. All dimensions use em-based sizes so that the scale along with the font size. Try increasing it to 15px and see what happens. */
+    font-size: 10px!important;
+    /* The main font color changes the ICON COLORS as well as the text */
+    color: #fff!important;
+}
+/* The "Big Play Button" is the play button that shows before the video plays. To center it set the align values to center and middle. The typical location of the button is the center, but there is trend towards moving it to a corner where it gets out of the way of valuable content in the poster image.*/
+.vjs-big-play-button {
+    /* The font size is what makes the big play button...big. All width/height values use ems, which are a multiple of the font size. If the .video-js font-size is 10px, then 3em equals 30px.*/
+    font-size: 3em!important;
+    /* We're using SCSS vars here because the values are used in multiple places. Now that font size is set, the following em values will be a multiple of the new font size. If the font-size is 3em (30px), then setting any of the following values to 3em would equal 30px. 3 * font-size. */
+    /* 1.5em = 45px default */
+    line-height: 2em!important;
+    height: 2em!important;
+    width: 2em!important;
+    /* 0.06666em = 2px default */
+    border: 0!important;
+    /* 0.3em = 9px default */
+    border-radius: 50%!important;
+    /* Align center */
+    left: 50%!important;
+    top: 50%!important;
+    margin-left: -1em!important;
+    margin-top: -1em!important;
+    -webkit-box-shadow: 0px 0px 30px 13px rgba(0,170,0,0.2);
+    -moz-box-shadow: 0px 0px 30px 13px rgba(0,170,0,0.2);
+    box-shadow: 0px 0px 30px 13px rgba(0,170,0,0.2);
+}
+/* The default color of control backgrounds is mostly black but with a little bit of blue so it can still be seen on all-black video frames, which are common. */
+.video-js .vjs-control-bar, .video-js .vjs-menu-button .vjs-menu-content {
+    /* IE8 - has no alpha support */
+    background-color: var(--color-noya-gray-900)!important;
+}
+.video-js .vjs-big-play-button {
+    /* IE8 - has no alpha support */
+    background-color: white!important;
+}
+/* Slider - used for Volume bar and Progress bar */
+.video-js .vjs-slider {
+    background-color: #a5a8bb!important;
+    background-color: rgba(0, 170, 0, 0.5)!important;
+}
+/* The slider bar color is used for the progress bar and the volume bar (the first two can be removed after a fix that's coming) */
+.video-js .vjs-volume-level, .video-js .vjs-play-progress, .video-js .vjs-slider-bar {
+    background: #fff!important;
+}
+/* The main progress bar also has a bar that shows how much has been loaded. */
+.video-js .vjs-load-progress {
+    /* For IE8 we'll lighten the color */
+    background: #eeeef2!important;
+    /* Otherwise we'll rely on stacked opacities */
+    background: rgba(0, 70, 0, 0.5)!important;
+}
+/* The load progress bar also has internal divs that represent smaller disconnected loaded time ranges */
+.video-js .vjs-load-progress div {
+    /* For IE8 we'll lighten the color */
+    background: #fff!important;
+    /* Otherwise we'll rely on stacked opacities */
+    background: rgba(0, 70, 0, 0.75)!important;
+}
+.vjs-icon-play:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before{
+    /*content: url("../img/icons/play-g.svg");*/
+    color: var(--color-noya-green-500);
+}
+
+
+
+
+/*product image GALLERY START*/
+
+.-fx-image-gal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; /* arbitrary valye */
+    margin: 0px auto;
+}
+
+.-fx-gal-item {
+    width: 25%; /* for 3 columns */
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+.-fx-gal-image-thumb img {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: opacity(40%);
+}
+
+.-fx-gal-image-thumb:hover img {
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    filter: opacity(100%);
+}
+.-fx-gal-image-thumb:focus{
+    outline: 0!important;
+    border: 0!important;
+}
+
+.-fx-gal-image-thumb:focus + .-fx-gal-image-big {
+    display: block;
+}
+
+.-fx-gal-image-big {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 10, 15, 0.8);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.-fx-gal-image-big img {
+    max-width: 45%;
+    position: absolute;
+    box-shadow: 0 0 800px 40px rgba(0, 0, 0, 0.9);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*product image GALLERY END*/
+
+/* AMI LIGHTBOX START */
+.-ami-gal-thumb{
+    cursor: pointer;
+}
+.-ami-gal-big{
+    visibility:hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.65);
+    overflow: hidden;
+}
+.-ami-gal-big img{
+    height: 100%;
+}
+/* AMI LIGHTBOX END */
+
+/*custom radio START*/
+
+.radioBox {
+    width: max-content;
+    color: white;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size:14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radioBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.myRadio {
+    position: absolute;
+    top:50%;
+    right: 0;
+    height: 13px;
+    width: 13px;
+    background-color: transparent!important;
+    border-radius: 50%;
+    border: 1px solid var(--color-emp-yellow);
+    transform: translate(0, -50%);
+}
+
+/* On mouse-over, add a grey background color */
+.radioBox:hover input ~ .myRadio {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radioBox input:checked ~ .myRadio {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.myRadio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioBox input:checked ~ .myRadio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioBox .myRadio:after {
+    top: 3px;
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--bg-gold);
+}
+
+/*custom radio END*/
+
+
+/*calendar START*/
+.pdp-default {
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 70px;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    padding: 3px;
+    position: absolute;
+    border: 1px solid rgb(53,56,65);
+    border-radius: 5px;
+    z-index: 9000000000000000;
+    color:white;
+
+}
+.pdp-default .today{
+    color: var(--color-emp-yellow) !important;
+    background: transparent;
+    font-weight: 600;
+}
+.pdp-default .nul{
+    width: 14.2%!important;
+    background-color: var(--color-emp-gray-500)!important;
+    border: 0!important;
+}
+.pdp-default .day {
+    width: 14.2% !important;
+    height: 29px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    background-color: var(--color-emp-gray-500)!important;
+    border: 1px solid var(--color-emp-gray-500);
+    color: white;
+}
+.pdp-default .days{
+    border:unset!important;
+    font: inherit!important;
+    background-color: var(--color-emp-gray-500)!important;
+
+}
+.pdp-default .selday{
+    border: 1px solid var(--bg-gold) !important;
+}
+.pdp-default .dows{
+    background-color: var(--color-emp-gray-500)!important;
+}
+.pdp-default .dow {
+    font: inherit!important;
+    width: 14.2% !important;
+    border: unset!important;
+    color: white!important;
+}
+.pdp-footer{
+    display: none;
+}
+.pdp-default .pdp-header {
+    padding: 5px !important;
+    height: 30px !important;
+    border-top: unset !important;
+    border-left: unset !important;
+    border-right: unset !important;
+    background-color: var(--color-emp-gray-500);
+}
+.pdp-default .friday{
+    color:red!important;
+}
+.pdp-default .disday{
+    color:var(--color-emp-gray-300)!important;
+}
+.pdp-default .nextArrow, .pdp-default .prevArrow{
+    top:8px!important;
+}
+/*calendar START*/
+
+/*turbolinks*/
+html.turbolinks-progress-bar::before {
+    background-color: var(--color-emp-yellow) !important;
+    height: 5px !important;
+}
+/*turbolinks*/

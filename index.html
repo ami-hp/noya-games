@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="viewport" content="width=320px, initial-scale=1,minimum-scale=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="cache-control" content="no-cache"/>-->
+
+    <!--TurboLinks-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js"></script>-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Font-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts/font-anjoman.css">
+
+    <!--datepicker-->
+    <link rel="stylesheet" href="assets/css/datepicker/persianDatepicker-default.css"/>
+
+    <!--WOW.js-->
+    <link rel="stylesheet" href="assets/css/wow/animate.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />-->
+
+    <!--Swiper.js-->
+    <link rel="stylesheet" href="assets/css/swiper6/swiper-bundle.min.css">
+    <!--Video.js-->
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script><!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/myStyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/myMedia.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/outStyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/customized-ami.css">
+
+    <!--froala-->
+    <link rel="stylesheet" href="assets/froala/css/froala_style.css">
+
+    <!--jquery-ui-->
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <!--Fav Icon-->
+    <link rel="shortcut icon" type="image/png" href="assets/img/logos/daamos/favicon.png">
+
+    <title>نویا | بازی</title>
+
+</head>
+<body dir="rtl">
+
+<div class="fixed top0 right0 window h-100 w-100 bg-overblack-darker z-loader d-flex flex-column align-items-center justify-content-center invisible hide" id="loader">
+    <span data-abort="spinner" class="text-danger" style="cursor: pointer;display: block;margin-top:10px;font-size: large;text-align: center">بازگشت</span>
+</div>
+
+<header class="container-fluid bg-vargray-900">
+    <div class="container">
+        <section class="row justify-content-start h-70x align-items-center ml-0">
+            <div class="col-12 col-lg-2 d-flex justify-content-center align-items-center justify-content-lg-start">
+                <figure class="mb-0">
+                    <a href="">
+                        <img class="" src="assets/img/logos/logo-wg.svg" alt="NOYA GAMES LOGO"/>
+                    </a>
+                </figure>
+            </div>
+            <nav class="col-lg menuMobile px-5 px-lg-0 h-mxmd-40">
+                <ul class="row mx-0 justify-content-lg-start justify-content-between align-items-center mb-0 h-100 nav-items f13-mxlg">
+                    <!--home tab-->
+                    <li class="text-center text-lg-right nav-item order-3 order-lg-first">
+                        <a href="" class="d-flex align-items-center">
+                            <img class="w-20x d-lg-none" src="assets/img/icons/home.svg" alt="Home"/>
+                            <span class="d-none d-lg-inline mr-1 text-vargreen-500">خانه</span>
+                        </a>
+                    </li>
+                    <!------->
+
+                    <!--profile tab-->
+                    <li class="text-center text-lg-right nav-item order-1 order-lg-last mr-lg-4">
+                        <a data-hunt="login" data-gun="fade" class="d-flex align-items-center pointer">
+                            <img class="w-20x d-lg-none" src="assets/img/icons/profile-small-w.svg" alt="profile"/>
+                            <span class="icon-box d-none d-lg-flex">
+                                <img class="w-20x" src="assets/img/icons/profile-small-w.svg" alt="Search"/>
+                            </span>
+                        </a>
+                    </li>
+                    <!--menu tab-->
+                    <li class="text-center text-lg-right nav-item mr-lg-4 order-first order-lg-3 rel" data-target="mega">
+                        <a class="d-flex align-items-center">
+                            <img class="w-20x d-lg-none" src="assets/img/icons/menu.svg" alt="Menu" data-hunt="sidemenu" data-gun="right0"/>
+                            <span class="d-none d-lg-inline mr-1 text-white pointer">محصولات</span>
+                        </a>
+                        <div class="mega-menu wowMega fadeInUp" data-toggle="mega" data-shot="fade">
+                            <ul class="mega-menu-list">
+                                <li><a href="gameDetail.html">تخته نرد</a></li>
+                                <li><a href="gameDetail.html">سوپرماریو<a/></li>
+                                <li><a href="gameDetail.html">منچ و مار پله</a></li>
+                                <li><a href="gameDetail.html">فوتبال دستی</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--news tab-->
+                    <li class="text-center text-lg-right nav-item mr-lg-4 order-last order-lg-4">
+                        <a href="news.html" class="d-flex align-items-center">
+                            <img class="w-20x d-lg-none" src="assets/img/icons/news.svg" alt="News"/>
+                            <span class="d-none d-lg-inline mr-1 text-white">اخبار</span>
+                        </a>
+                    </li>
+                    <!--about us tab-->
+                    <li class="text-center text-lg-right nav-item mr-lg-4 order-last order-lg-4 d-none d-lg-inline">
+                        <a href="videos.html" class="d-flex align-items-center">
+                            <span class="mr-1 text-white">گالری&zwnj;ویدیو</span>
+                        </a>
+                    </li>
+                    <!--about us tab-->
+                    <li class="text-center text-lg-right nav-item mr-lg-4 order-last order-lg-4 d-none d-lg-inline">
+                        <a href="" class="d-flex align-items-center">
+                            <span class="d-none d-lg-inline mr-1 text-white">درباره ما</span>
+                        </a>
+                    </li>
+                    <!--search tab-->
+                    <li class="text-center text-lg-right nav-item mr-lg-auto order-4 order-lg-5">
+                        <a data-hunt="search" data-gun="fade" class="d-flex align-items-center pointer">
+                            <img class="w-20x d-lg-none" src="assets/img/icons/search-w.svg" alt="Search"/>
+                            <span class="icon-box d-none d-lg-flex">
+                                <img class="w-20x" src="assets/img/icons/search-outline-w.svg" alt="Search"/>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</header>
+
+<aside class="side-menu bgg-gray-500-700" data-bait="sidemenu">
+    <div class="container-fluid h-100">
+        <div class="row justify-content-center align-items-center h-70x rel">
+            <img class="" src="assets/img/logos/logo-wg.svg" alt="NOYA GAMES LOGO"/>
+            <img class="close-left-10x" src="assets/img/icons/close-square.svg" alt="close" data-close="sidemenu"/>
+        </div>
+        <div class="row flex-column h-calc70 scroll-y-auto scroll-trans">
+            <ul class="col d-flex flex-column aside-items px-0 pt-4">
+                <li class="w-100 aside-item">
+
+                    <span class="pointer font-bold d-block" data-collapse-next>محصولات</span>
+                    
+                    <ul class="col flex flex-column cat-items px-4 font-med" style="display: none">
+                        <li class="w-100 cat-item text-right mb-2"><a href>تخته نرد</a></li>
+                        <li class="w-100 cat-item text-right mb-2"><a href>فورتنایت</a></li>
+                        <li class="w-100 cat-item text-right mb-2"><a href>کال آو دیوتی</a></li>
+                        <li class="w-100 cat-item text-right mb-2"><a href>هیت من</a></li>
+                    </ul>
+
+                </li>
+                <li class="w-100 aside-item"><span class="pointer font-bold"><a href class="nota">گالری ویدیو</a></span></li>
+                <li class="w-100 aside-item"><span class="pointer font-bold"><a href class="nota">درباره&zwnj;ی ما</a></span></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+<!--SEARCH START-->
+<section class="searchThat" data-bait="search" data-close="search" data-shot="fade">
+    <div class="search-modal bg-vargray-200 rounded-set shadow-on-mid rel" data-prevent>
+
+        <span class="search-close abs left10 left10 f20 font-med pointer text-vargray-500" data-close="search">&times;</span>
+        <form action="" method="post" class="w-100 h-100 d-flex align-items-center justify-content-center m-0 py-4 py-md-4 px-2 px-md-4 flowhid rounded-set">
+            <button type="button" class="search-md-img d-flex justify-content-center align-items-center bg-varyellow ml-2">
+                <img src="assets/img/icons/search-gray.svg" alt="search icon"/>
+            </button>
+            <input type="text" class="search-md px-3 f12-mxsm" id="gsearchsimple" autocomplete="off" dir="rtl" placeholder="دنبال چیزی هستید؟ جستجو کنید"/>
+            <div id="localSearchSimple"></div>
+            <div id="detail"></div>
+        </form>
+        <div class="w-100 d-flex rel">
+            <span class="abs search-trash f20 text-red pointer" style="display: none;">&times;</span>
+            <div class="w-100 px-4 list-group pb-3 scroll-y-auto" style="display: none"></div>
+        </div>
+    </div>
+</section>
+<!--SEARCH END-->
+
+<!--PANEL START-->
+
+<!--PANEL END-->
+
+<!--LOGIN START-->
+
+<section class="out flowhid scroll-y-auto scroll-trans" data-bait="login" data-shot="fade" data-close="login"><!--activeVisible-->
+    <div class="outBody d-flex my-auto mx-auto rounded-10x flowhid scroll-y-auto scroll-trans" data-prevent><!--activeScale-->
+        <div class="d-flex flex-column align-items-center mx-auto text-white">
+            <h6 class="text-center mb-0 logBox f18 f16-mxsm mt-auto">ورود به ناحیه کاربری</h6>
+            <img class="close-right-10x pointer w-20x" src="assets/img/icons/close-square.svg"
+                 alt="close" data-close="login"/>
+            <img class="w-50 mx-auto mt-2" src="assets/img/icons/profile-w.svg" alt="profile"/>
+
+            <div class="mb-auto sendBox" data-toggle="mobile">
+                <h6 class="mt-4 f14 f13-mxsm text-center font-light">شماره تلفن همراه خود را وارد کنید</h6>
+                <div class="d-flex bg- py-2 px-2 rounded mt-4 sendCodeBox">
+                    <input type="tel" class="text-center text-white font-light userPhoneInput no-out"
+                           placeholder="___-___-____" id="phoneNumber" dir="ltr" autocomplete="off" data-inputmask="'mask': '999-999-9999'"/>
+                    <span class="center-flex num98 text-vargray-200">98+</span>
+                </div>
+                <div class="btn-green mt-4 pointer font-med" data-target="rand">ارسال کد</div>
+            </div>
+            <div class="mb-auto getBox text-center" data-toggle="rand" style="display: none">
+                <h6 class="mt-4 f14 f13-mxsm text-vargray-100 font-light">
+                    کد برای شماره
+                    <span class="font-med text-white mx-1" id="codeTarget">09390123999</span>
+                    ارسال شد
+                </h6>
+                <div class="col text-center h6-mxsm h6-mxxs">
+                    <small class="text-vargray-300">
+                        <span>شماره وارد شده اشتباه است؟</span>
+                        <span class="text-vargray-100 pointer" data-target="mobile">ویرایش کنید</span>
+                    </small>
+                </div>
+                <div class="d-flex flex-column py-2 rounded mt-4 sendCodeBox">
+                    <input type="tel" class="text-center text-white userPhoneInput no-out"
+                           id="validate" dir="ltr" placeholder="------" autocomplete="off" data-inputmask="'mask': '999999'"/>
+                </div>
+                <p class="timer marg-top15 d-flex f14 f13-mxsm">
+                    <span class="ml-1">زمان باقیمانده</span>
+                    <span class="js-timeout text-varyellow">1:58</span>
+                    <label class="text-soon mr-auto banned" id="try">ارسال مجدد</label>
+                    <label class="text-danger mr-auto pointer font-med" id="try_verify" style="display: none;">ارسال مجدد</label>
+                </p>
+                <div class="btn-green mt-4" id="tryLog">تایید</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--LOGIN END-->
+
+
+<main class="container-fluid px-0 pb-5">
+
+    <!--SEC 1 START-->
+    <section class="w-100 window bg-cover-center" style="background-image: url('assets/img/statics/index.gif')">
+        <div class="w-100 h-100 d-flex px-4 bgg-gray-900-over-top flowhid scroll-y-auto ">
+            <img src="assets/img/logos/logo-backg.svg" alt="NOYA LOGO" class="index-logo m-auto wow fadeInDown" data-wow-delay="1.5s"/>
+        </div>
+    </section>
+    <!--SEC 1 END-->
+
+    <!--SEC 2 START-->
+    <section class="w-100 bg-cover-center" style="background-image: url('assets/img/statics/index-2.png')">
+        <div class="col w-100 h-100 d-flex px-4 bgg-gray-900-over-y px-0">
+            <div class="container min-window d-flex">
+                <article class="row my-auto mx-0 text-right pb-4 pb-md-0">
+                    <div class="col-12 col-lg-6 my-auto text-white order-last order-lg-first">
+                        <h1 class="font-black f20-mxsm wow fadeInUpBig" data-wow-duration="1s">تخته نرد نویا گیم</h1>
+                        <p class="mt-4 text-vargray-100 text-justify f16-mxsm line-sp30x wow fadeInUpBig" data-wow-duration="1.25s">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                        <a href="gameDetail.html" class="d-flex align-items-center after-arrow-left-g text-glow-vargreen-500 wow fadeInUpBig" data-wow-duration="1.5s">معرفی بازی تخته نرد</a>
+                        <div class="w-100 mt-3 downloadbox">
+                            <span class="d-block text-center font-bold wow fadeInUpBig" data-wow-duration="1.75s">دانلود و دریافت از طریق</span>
+                            <div class="row mx-0 mt-3 dlLinks justify-content-center">
+                                <div class="col-6 col-md-4 wow fadeInUpBig" data-wow-duration="1.75s" data-wow-delay="0.25s">
+                                    <a>
+                                        <img src="assets/img/logos/google-play.png" alt="google" class=""/>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 wow fadeInUpBig" data-wow-duration="1.75s" data-wow-delay="0.5s">
+                                    <a>
+                                        <img src="assets/img/logos/bazaar.png" alt="bazzar" class=""/>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 mt-2 mt-md-0 wow fadeInUpBig" data-wow-duration="1.75s" data-wow-delay="0.75s">
+                                    <a>
+                                        <img src="assets/img/logos/sibapp.png" alt="sib app" class=""/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex my-auto order-first order-lg-last">
+                        <figure class="m-0">
+                            <img src="assets/img/statics/phone.png" alt class="w-100 img-fluid m-auto wow fadeInUpBig" data-wow-duration="1.75s"/>
+                        </figure>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--SEC 2 END-->
+
+    <!--SEC 3 START-->
+    <section class="w-100 bg-cover-center rel">
+        <!--<img src="assets/img/statics/nimcir-left.svg" class="img"/>-->
+        <div class="col w-100 h-100 d-flex py-4 py-md-2 px-5 px-md-4 bgg-gray-900-over-y flowhid nextline">
+            <div class="behind-cirLeft wow flash" data-wow-duration="5s" data-wow-iteration="infinite"></div>
+            <div class="behind-cirRight wow flash" data-wow-duration="3s" data-wow-iteration="infinite"></div>
+            <div class="container min-window d-flex flex-column align-items-center">
+                <div class="titlebar-index-news mt-auto mb-3 ml-md-auto">
+                    <img src="assets/img/statics/titlebar-index.svg" alt="titleBar" class="img img-fluid wow fadeInRight" data-wow-duration="1.75s" data-wow-delay="0.5s">/>
+                </div>
+                <article class="index-swiper row mb-auto mx-0 text-right pb-4 pb-md-0 w-100 justify-content-center rel">
+                    <div class="behind-diceLeft"></div>
+                    <div class="swiper-container col-lg-12 col-12"><!--500px-->
+                        <div class="swiper-wrapper wow fadeInLeft" data-wow-duration="1.75s" data-wow-delay="0.5s">
+                            <!--sample foreach start-->
+                            <div class="swiper-slide h-auto d-flex flex-column flex-md-row swiperCenter rounded-20x flowhid nextline bg-overblack-300 max-ch-imp w-100">
+                                <div class="col-12 col-md-6 order-first order-md-last px-0">
+                                    <figure class="m-0 rel">
+                                        <!--<img class="img-fluid" src="assets/img/statics/placeholder-sq.png" alt=""/>-->
+                                        <img class="img-fluid" src="assets/img/statics/sq-sample.png" alt=""/>
+                                        <div class="has-video abs w-100 h-100 d-flex align-items-center justify-content-center top0 left0 bg-overblack-500">
+                                            <img class="img-fluid" src="assets/img/icons/play-g-sharper.svg" alt=""/>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex flex-column h-md-100 py-3 py-md-5 px-3 px-md-5 order-last order-md-first bgg-gray-500-700 text-right">
+                                    <h5 class="f20 f16-mxsm">بازی تخته نرد</h5>
+                                    <p class="text-justify text-vargray-200 f14-mxsm trimBig">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                                    <a href="newsDetail.html" class="text-glow-vargreen-500 after-arrow-left-g mt-auto">معرفی بازی تخته نرد</a>
+                                </div>
+                            </div>
+                            <!--sample foreach end-->
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--SEC 3 END-->
+
+    <!--SEC 4 START-->
+    <section class="w-100 bg-cover-center">
+        <div class="col w-100 h-100 bgg-gray-900-over-y px-0">
+            <div class="container min-window d-flex">
+                <article class="row my-auto mx-0 text-right pb-4 pb-md-0">
+                    <div class="col-12 col-lg-6 my-auto text-white order-last order-lg-first wow fadeInRight">
+                        <h1 class="font-black f20-mxsm">تخته نرد نویا گیم</h1>
+                        <p class="mt-4 text-vargray-100 text-justify f16-mxsm line-sp30x">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                        <a href="page.html" class="d-flex align-items-center after-arrow-left-w text-white">مطالعه بیشتر</a>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex my-auto order-first order-lg-last wow fadeInLeft" data-wow-delay="0.5s">
+                        <figure class="m-0">
+                            <img src="assets/img/statics/green-blend.png" alt class="w-100 img-fluid m-auto"/>
+                        </figure>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--SEC 4 END-->
+
+</main>
+
+<div class="col py-4">
+    <div class="row justify-content-end">
+        <div class="social-media shadowbox-vargreen-500">
+            <img src="assets/img/icons/telegram-w.svg"       alt="telegram" class=""/>
+            <img src="assets/img/icons/linkedin-w.svg"       alt="linkedin" class=""/>
+            <img src="assets/img/icons/youtube-w.svg"        alt="youtube"  class=""/>
+            <img src="assets/img/icons/twitter-w.svg"        alt="twitter"  class=""/>
+            <img src="assets/img/icons/facebook-solid-w.svg" alt="facebook" class=""/>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid bg-vargray-200 bg-footer py-5">
+    <div class="row justify-content-center d-md-none mt-5">
+        <img src="assets/img/logos/logo-w.svg" alt="NOYA LOGO" class=""/>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center text-white text-center text-md-right pr-md-100x mt-5">
+            <div class="col-12  col-md-6 col-xl-3 mt-4 mt-md-0">
+                <h6 class="text-vargreen-500 f20 f16-mxsm font-bold">لینک های پرکاربرد</h6>
+                <ul class="footer-list">
+                    <li><a href="#">درباره&zwnj;ی ما</a></li>
+                    <li><a href="#">آموزش و اطلاعات تخصصی</a></li>
+                    <li><a href="page.html">قوانین و مقررات</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="col-12  col-md-6 col-xl-3 mt-4 mt-md-0">
+                <h6 class="text-vargreen-500 f20 f16-mxsm font-bold">آخرین اخبار</h6>
+                <ul class="footer-list flowhid">
+                    <li><a href="newsDetail.html">آخبرین خبر</a></li>
+                    <li><a href="newsDetail.html">آخبرین خبر</a></li>
+                    <li><a href="newsDetail.html">آخبرین خبر</a></li>
+                    <li><a href="newsDetail.html">آخبرین خبر</a></li>
+                </ul>
+            </div>
+            <div class="col-12  col-md-6 col-xl-3 mt-4 mt-md-0 ">
+                <h6 class="text-vargreen-500 f20 f16-mxsm font-bold">تماس با ما</h6>
+                <ul class="footer-list contact">
+                    <li>
+                        <a href="tel:" class="w-100 d-flex align-items-center">
+                            <div class="cir before-phone"></div>
+                            <span class="mx-auto">021-33221144</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="whatsapp://send?text=نویا گیم :با ما در ارتباط باشید&phone=0912" class="w-100 d-flex align-items-center">
+                            <div class="cir before-whatsapp"></div>
+                            <span class="mx-auto">تماس در واتس اپ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:" class="w-100 d-flex align-items-center flowhid">
+                            <div class="cir before-email"></div>
+                            <span class="mx-auto">info@noyagame.com</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 text-md-center mt-4 mt-xl-0">
+                <h6 class="text-vargreen-500 f20 f16-mxsm font-bold">نمادهای اعتبار</h6>
+                <div class="d-flex justify-content-lg-between justify-content-center py-1 mt-2">
+                    <div class="col px-1"><img class="w-100 img img-fluid" src="assets/img/logos/damoos.svg"  alt="DAAMOS NAMAD"/></div>
+                    <div class="col px-1"><img class="w-100 img img-fluid" src="assets/img/logos/e-namad.svg"  alt="enamad"/></div>
+                    <div class="col px-1"><img class="w-100 img img-fluid" src="assets/img/logos/samandehi.svg"  alt="meli namad"/></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col px-1 d-flex justify-content-center"><img class="img img-fluid daamos-sign" src="assets/img/logos/daamos-sign.svg"  alt="DAAMOS NAMAD"/></div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>-->
+<script src="assets/js/wow/wow.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>-->
+<script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+<script src="assets/js/anime.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="assets/js/JsLocalSearch.js"></script>
+<script src="assets/js/jquery.inputmask.js"></script>
+<script src="assets/js/bindings/inputmask.binding.js"></script>
+<script src="assets/js/swiper6/swiper-bundle.min.js"></script>
+<script src="assets/js/myJs.js"></script>
+<script src="assets/js/outJs.js"></script>
+
+<script src="assets/js/datepicker/persianDatepicker.min.js"></script>
+<script type="text/javascript">
+    $("#pdpStartToday").persianDatepicker({
+        startDate: "today",
+        endDate:"6969/5/26"
+    });
+</script>
+</body>
+</html>

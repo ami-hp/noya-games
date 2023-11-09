@@ -1,0 +1,453 @@
+.f30{
+    font-size: 30px;
+}
+.f26{
+    font-size: 26px;
+}
+.f20{
+    font-size: 20px;
+}
+.f18{
+    font-size: 18px;
+}
+.f16{
+    font-size: 16px;
+}
+.f14{
+    font-size: 14px;
+}
+.f13{
+    font-size: 13px;
+}
+.f12{
+    font-size: 12px;
+}
+.f10{
+    font-size: 10px;
+}
+
+.w13{
+    width: 13px;
+}
+.w-40{
+    width: 40%!important;
+}
+.w-20x{
+    width: 20px;
+}
+.w-30x{
+    width: 30px;
+}
+.w-70x{
+    width: 70px;
+}
+.w-200x{
+    width: 200px;
+}
+.h-40{
+    height: 40px;
+}
+.h-70x{
+    height: 70px;
+}
+.h-calc40{
+    height: calc(100% - 40px);
+}
+.h-calc45{
+    height: calc(100% - 45px);
+}
+.h-calc50{
+    height: calc(100% - 50px);
+}
+.h-calc70{
+    height: calc(100% - 70px);
+}
+.mb-27px{
+    margin-bottom: 27px;
+}
+.text-lastline-right{
+    text-align-last: right;
+}
+.text-lastline-center{
+    text-align-last: center;
+}
+
+.flextoblock{
+    display: flex;
+    align-items: center;
+}
+
+.side-menu{
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    padding-bottom: 45px;
+    background-color: var(--color-noya-gray-900);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 200;
+    transition: all 0.5s ease;
+}
+
+.behind-cirLeft{
+    background-image: url("../img/statics/nimcir-left.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 270px;
+    position: absolute;
+    left: 0;
+    height: 620px;
+    top: -70px;
+    z-index: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.behind-cirRight{
+    background-image: url("../img/statics/nimcir-right.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 270px;
+    position: absolute;
+    right: 0;
+    top: 170px;
+    height: 620px;
+    z-index: 0;
+    bottom: 0;
+    margin: auto;
+}
+.behind-diceLeft{
+    background-image: url(../img/statics/dice-blur.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    position: absolute;
+    z-index: 0;
+
+    left: -50px;
+    width: 140px;
+    height: 150px;
+    top: -50px;
+}
+.titlebar-index-news{
+    /*position: absolute;
+    z-index: 1;
+    left: -50px;
+    top: 150%;*/
+}
+.bg-footer{
+    /*background-color: #535353;*/
+    background-image: url("../img/statics/footer.svg"), linear-gradient(0deg, rgba(83,83,83,1) 95%, rgba(45,45,45,1) 95%);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*-------xl--------*/
+@media only screen and (min-width:1200px) {
+    .flex-mxxl-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1200px){
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+
+@media only screen and (max-width:1023px) {
+
+}
+/*-------lg-------*/
+@media only screen and (max-width:1199px) {
+    .flex-mxlg-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+    .h6-mxlg{
+        font-size: 0.8rem;
+    }
+    .f25-mxlg{
+        font-size: 25px;
+    }
+    .f20-mxlg{
+        font-size: 20px;
+    }
+    .f18-mxlg{
+        font-size: 18px;
+    }
+    .f16-mxlg{
+        font-size: 16px;
+    }
+    .f14-mxlg{
+        font-size: 14px;
+    }
+    .f12-mxlg{
+        font-size: 12px;
+    }
+    .f10-mxlg{
+        font-size: 10px;
+    }
+
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+
+}
+@media only screen and (min-width:992px) {
+    .h-lg-100{
+        height: 100%;
+    }
+}
+/*--------md------*/
+
+@media only screen and (max-width:991px) {
+    .bg-footer{
+        background-size: 290%;
+    }
+    .flex-mxmd-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+    .f25-mxmd{
+        font-size: 25px;
+    }
+    .f20-mxmd{
+        font-size: 20px;
+    }
+    .f18-mxmd{
+        font-size: 18px;
+    }
+    .f16-mxmd{
+        font-size: 16px;
+    }
+    .f14-mxmd{
+        font-size: 14px;
+    }
+    .f12-mxmd{
+        font-size: 12px;
+    }
+    .f10-mxmd{
+        font-size: 10px;
+    }
+    .h-mxmd-40{
+        height: 40px;
+    }
+    .h-mxmd-45{
+        height: 45px;
+    }
+    .menuMobile {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        background: var(--color-noya-green-500-700);
+        border-radius: 20px 20px 0 0;
+        padding: 10px 25px;
+        z-index: 2020;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+
+}
+@media only screen and (min-width:768px) {
+    .flex-md-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+    .pt-md-6, .py-md-6 {
+        padding-top: 6rem!important;
+    }
+    .pb-md-6, .py-md-6 {
+        padding-bottom: 6rem!important;
+    }
+    .py-md-per{
+        padding-top: 30%!important;
+        padding-bottom: 10%!important;
+    }
+    .h-md-100{
+        height: 100%;
+    }
+    .pr-md-100x{
+        padding-right: 100px;
+    }
+}
+
+/*---------sm-------*/
+
+@media only screen and (max-width:767px) {
+    .flex-mxsm-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+    .h6-mxsm{
+        font-size: 0.9rem;
+    }
+    .f25-mxsm{
+        font-size: 25px;
+    }
+    .f20-mxsm{
+        font-size: 20px;
+    }
+    .f18-mxsm{
+        font-size: 18px;
+    }
+    .f16-mxsm{
+        font-size: 16px;
+    }
+    .f15-mxsm{
+        font-size: 15px;
+    }
+    .f14-mxsm{
+        font-size: 14px;
+    }
+    .f13-mxsm{
+        font-size: 13px;
+    }
+    .f12-mxsm{
+        font-size: 12px;
+    }
+    .f10-mxsm{
+        font-size: 10px;
+    }
+    .w-mxsm-15{
+        width: 15px;
+    }
+    .w-mxsm-10{
+        width: 10px;
+    }
+    .pr-mxsm-100x{
+        padding-right: 100px;
+    }
+}
+@media only screen and (min-width:544px) and (max-width:767px){
+
+}
+@media only screen and (min-width:544px) {
+    .text-sm-justify {
+        text-align : justify !important;
+    }
+}
+
+/*----------xs--------*/
+
+@media only screen and (max-width:543px) {
+    .flex-mxxs-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+    .f25-mxxs{
+        font-size: 25px;
+    }
+    .f14-mxxs{
+        font-size: 14px;
+    }
+    .f10-mxxs{
+        font-size: 10px;
+    }
+    .f18-mxxs{
+        font-size: 18px!important;
+    }
+    .f16-mxxs{
+        font-size: 16px;
+    }
+    .f12-mxxs{
+        font-size: 12px!important;
+    }
+    .f11-mxxs{
+        font-size: 11px!important;
+    }
+    .f10-mxxs{
+        font-size: 10px;
+    }
+    .f9-mxxs{
+        font-size: 9px;
+    }
+    .f8-mxxs{
+        font-size: 8px;
+    }
+    .w-mxxs-15{
+        width: 15px!important;
+    }
+    .h6-mxxs{
+        font-size: 0.8rem;
+    }
+    .h7-mxxs{
+        font-size: 0.6rem;
+    }
+    .pad-mxxs-side10{
+        padding: 10px;
+    }
+    .behind-cirLeft{
+        width: 130px;
+        height: 340px;
+        top: -180px;
+    }
+    .behind-cirRight{
+        width: 230px;
+        top: 160px;
+        height: 340px;
+    }
+}
+@media only screen and (min-width:425px) and (max-width:543px){
+
+
+}
+@media only screen and (max-width:425px) {
+    .searchInput{
+        position: relative;
+        bottom: 30px;
+        width: 80%!important;
+        margin-left: auto;
+        margin-right: auto;
+        height: 45px!important;
+        background-color: transparent!important;
+        border: 1px solid white;
+        border-bottom: 1px solid #c8b56e !important;
+    }
+}
+
+/*iphone pro max*/
+@media only screen and (max-width:375px) {
+
+}
+
+@media only screen and (max-width:320px) {
+    .f16-mxs5{
+        font-size: 16px;
+    }
+    .f14-mxs5{
+        font-size: 14px;
+    }
+    .f12-mxs5{
+        font-size: 12px;
+    }
+    .f10-mxs5{
+        font-size: 10px;
+    }
+    .f9-mxs5{
+        font-size: 9px;
+    }
+}
+
+/*fold*/
+@media only screen and (max-width:280px) {
+    .hidden-fold{
+        display: none;
+    }
+}
+@media only screen and (min-height:812px) and (min-width:375px) {
+
+}
+@media only screen and (max-height:811px) and (max-width:374px) {
+
+}
+@media only screen and (max-height:811px) {
+    .flextoblock{
+        display: block;
+        padding-top: 20px;
+    }
+}
